@@ -1,0 +1,29 @@
+{
+  "name": "raank.github.io",
+  "version": "1.0.0",
+  "authors": [
+    "rank <raank@outlook.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://raank.github.io/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "_bower",
+    "bower_components"
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.3",
+    "fontawesome": "~4.3.0",
+    "jquery": "~1.9.0",
+    "jquery-validation": "~1.13.1",
+    "bootstrap-sass-official": "~3.3.3",
+    "fluidvids": "~2.4.1",
+    "lazysizes": "~1.0.0",
+    "velocity": "~1.2.2"
+  }
+}

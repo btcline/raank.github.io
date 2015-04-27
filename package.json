@@ -1,0 +1,26 @@
+{
+  "name": "raank.github.io",
+  "version": "1.0.0",
+  "title": "raank.github.io",
+  "author": "Raank (http://raank.github.io)",
+  "dependencies": {
+    "connect": "",
+    "gulp": "",
+    "gulp-autoprefixer": "",
+    "gulp-clean": "",
+    "gulp-dynamic": "",
+    "gulp-flatten": "0.0.4",
+    "gulp-gm": "",
+    "gulp-if": "",
+    "gulp-load-plugins": "",
+    "gulp-minify-css": "",
+    "gulp-notify": "",
+    "gulp-plumber": "",
+    "gulp-rename": "",
+    "gulp-ruby-sass": "0.7.1",
+    "gulp-uglify": "",
+    "js-yaml": "^3.2.7",
+    "minimist": "",
+    "path": ""
+  }
+}

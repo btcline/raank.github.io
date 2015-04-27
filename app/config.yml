@@ -1,0 +1,7 @@
+config:
+	wp:			false
+	sass:		'assets/sass'
+	javascript: 'assets/js'
+	css:		'build/css'
+	js:			'build/js'
+	imgs:		'build/images'
