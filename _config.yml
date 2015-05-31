@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title: Felipe Rank - Front-end Developer
+title: Felipe Rank - Developer jr
 description: I'm front-end developer
 analytics: UA-54717879-1
 url: http://raank.github.io/
@@ -30,7 +30,7 @@ owner:
   github: https://github.com/raank
 
 metatag:
-  description: Portfólio - Felipe Rank
+  description: Felipe Rank
   tags: Felipe Rank, Desenvolvimento, Criação de Sites em Jaraguá do Sul, desenvolvimento de sites
   type: website
 
