@@ -1,5 +1,4 @@
 # Site wide configuration
-
 title: Felipe Rank - Developer jr
 description: Desenvolvedor Jr front e back end, especialista em wordpress
 analytics: UA-54717879-1
@@ -11,14 +10,28 @@ includes:     ./_includes
 layouts:     ./_layouts
 data_source: ./_data
 share: /images/share/share.jpg
+
+# Build settings
+markdown: kramdown
+redcarpet:
+  extensions: ["tables", "fenced_code_blocks"]
+
+# Outputting
+permalink:     /blog/:year/:month/:title.html
+paginate_path: /page:num
+timezone:      null
+
+# collections
 collections:
   projects:
     output: true
     permalink: /projetos/:title.html
     layout: project.html
 
+# dep
 gems:
   - jekyll-sitemap
+
 
 # Site owner
 owner:
@@ -29,10 +42,11 @@ owner:
   linkedin: http://goo.gl/5V2l5R
   github: https://github.com/raank
 
+# Meta Tags
 metatag:
   description: Felipe Rank
   tags: Felipe Rank, Desenvolvimento, Criação de Sites em Jaraguá do Sul, desenvolvimento de sites
   type: website
 
-
+# excludes files
 exclude: ["lib", "app", "assets", "csscomb.json", "bower.json", "gulpfile.js","config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]

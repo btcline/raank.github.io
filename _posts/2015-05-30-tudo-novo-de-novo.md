@@ -4,7 +4,7 @@ title: Tudo novo, de novo!
 date:   2015-05-30
 categories: posts
 image:
-    thumb: http://i.imgur.com/eXrSvuY.jpg
+    thumb:
 ---
 
 Lançamento da identidade visual que fiz para mim, acho que depois de 3 anos no ramo, achei que já estava na hora. Nesse espaço irei contar experiências, compartilhar conhecimento e informações para quem está começando e porque não também para quem já está a mais tempo que eu, né? Além do mais, ninguém sabe de tudo.

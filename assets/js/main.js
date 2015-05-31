@@ -1,5 +1,4 @@
 //import("vendor/_fss.js");
-//import("lazysizes/lazysizes.js");
 
 (function($) {
 	'use scrict';
@@ -12,6 +11,10 @@
 	});
 
 	$(window).load(function() {
+		$('img.lazyload').each(function() {
+			var url = $(this).data('src');
+			$(this).css('opacity', 0).attr('src', url);
+		});
 		$('body').removeClass('loading').addClass('loaded');
 		$('.main-header').each(function() {
 			if($(window).innerHeight() < $('.main-header').innerHeight()){
@@ -27,6 +30,19 @@
 		if(success == true) {
 			$('.message-contact').removeAttr('style');
 		}
+		setTimeout(function() {
+			$('img.lazyload').each(function() {
+				$(this).removeAttr('style').addClass('lazyloaded');
+			});
+		}, 2000);
 	});
+
+	$('pre code').each(function() {
+		var classs = $(this).attr('class').split('-');
+		$(this).parent('pre').addClass('full-code');
+		$(this).addClass(classs[1]);
+	});
+
+	$('.post-text p').find('code').addClass('code-paragraph');
 
 })(jQuery);
