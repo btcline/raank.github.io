@@ -1,0 +1,43 @@
+
+
+.main-footer {
+	width: 100%;
+	float: left;
+	padding: 15px 0;
+	opacity: 0;
+	@include transition-standard;
+	.loaded & {
+		opacity: 1;
+	}
+	.copyrights p,
+	.socials li {
+		height: 32px;
+		line-height: 32px;
+	}
+	.copyrights {
+		p {
+			margin: 0;
+			color: $color4;
+			font: {
+				size: 11px;
+				weight: 300;
+			}
+		}
+	}
+	.socials {
+		ul {
+			float: right;
+			li {
+				float: left;
+				margin-left: 10px;
+				font-size: 18px;
+				a {
+					color: $color4;
+					&:hover {
+						color: $color1;
+					}
+				}
+			}
+		}
+	}
+}

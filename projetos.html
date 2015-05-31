@@ -1,0 +1,50 @@
+---
+layout: default
+permalink: /projetos/
+title: Projetos
+page: projects
+polygon: false
+fluid: false
+---
+
+	<div class="main-site">
+		<div class="section-page-top">
+			<div class="full-img full-img-primary" data-img="https://unsplash.it/g/1920/300/?random&gravity=center"></div>
+			<div class="middle">
+				<div class="centered">
+					<div class="full-img full-img-secondary"></div>
+					<h1>projetos</h1>
+					<p>projetos realizados em<br> empresas e autorais.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="section-page section-projects">
+					<div class="col-projects col-md-7">
+						<ul class="col-projects-list grid-projects">
+							
+							{% for projeto in site.projects %}
+							{% assign loopindex = forloop.index | modulo: 1 %}
+							<li class="project-item {% if loopindex == 1 %}feature{% else %}normal{% endif %}">
+								<a href="{{ projeto.url }}">
+									<div class="project-image loading">
+										<img class="lazyload" data-src="{{ site.baseurl }}images/projetos/{{ projeto.image.thumb }}" alt="{{ projeto.thumb.title }}">
+										<div class="project-content">
+											<h4>{{ projeto.title }}</h4>
+											<div class="view-project">
+												<p>Ver Projeto</p>
+												<span class="fa fa-chevron-right"></span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							{% endfor %}
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

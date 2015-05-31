@@ -1,0 +1,93 @@
+/*
+ * mixins helpers
+ * @since 1.0.0
+ */
+// Extends
+@mixin clear_font {
+	font-size: 0;
+	line-height: 0;
+}
+
+@mixin transition-standard() {
+	transition: all 450ms;
+	transition-delay: 0.2s;
+}
+
+// Mixins
+@mixin xs {
+	@media (max-width: $max-xs) {
+		@content;
+	}
+}
+
+@mixin tb {
+	@media (min-width: $max-xs) and (max-width: $max-tb) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media (min-width: $max-sm) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media (min-width: $max-md) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media (min-width: $min-lg) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	// @media (max-width: $max-tb) {
+	.mobile & {
+		@content;
+	}
+}
+
+@mixin desktop {
+	// @media (min-width: $max-sm) {
+	.desktop {
+		@content;
+	}
+}
+
+@mixin retina {
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+			only screen and (min--moz-device-pixel-ratio: 1.5),
+			only screen and (min-device-pixel-ratio: 1.5)
+	{
+		@content;
+	}
+}
+
+@mixin grid( $lg, $md: 0, $sm: 0, $xs: 0, $padding: true ) {
+	@include make-xs-column( $xs );
+	@include make-sm-column( $sm );
+	@include make-md-column( $md );
+	@include make-lg-column( $lg );
+	@if $padding == false {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+@mixin grid-offset( $lg, $md: 0, $sm: 0, $xs: 0 ) {
+	@include make-xs-column-offset( $xs );
+	@include make-sm-column-offset( $sm );
+	@include make-md-column-offset( $md );
+	@include make-lg-column-offset( $lg );
+}
+
+@mixin placeholder_css {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+	&:-ms-input-placeholder      {@content}  
+}

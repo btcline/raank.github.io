@@ -1,0 +1,191 @@
+.page-project {
+	.post-text {
+		ul {
+			width: 100%;
+			float: left;
+			font-size: 0;
+			li {
+				float: left;
+				margin: 0 5px 5px 0;
+			}
+		}
+	}
+}
+
+.section-projects {
+	.col-projects {
+		padding: 0 0;
+		margin: -5px 0 0;
+		&, &-list, a,
+		.project-image,
+		.project-content {
+			width: 100%;
+			float: left;
+		}
+		&-list {
+			.project-item {
+				margin: 5px 0;
+				padding: 0 5px !important;
+				float: none;
+				display: inline-block;
+				a {
+					position: relative;
+					overflow: hidden;
+					height: 100%;
+				}
+				img {
+					width: 100%;
+					height: 100%;
+					float: left;
+				}
+				.project-image {
+
+				}
+				.project-content {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					float: left;
+					height: 100%;
+					padding: 15px;
+					opacity: 0;
+					transition: all 450ms;
+					transition-delay: 0.2s;
+					background: -webkit-linear-gradient(left, rgba( $color1, 0.7 ) 10%, rgba( $color2, 0.7 ) 90%);
+					background: -o-linear-gradient(left, rgba( $color1, 0.7 ) 10%, rgba( $color2, 0.7 ) 90%);
+					background: linear-gradient(to right, rgba( $color1, 0.7 ) 10%, rgba( $color2, 0.7 ) 90%);
+					h4 {
+						color: $color3;
+						margin: 0 0 15px;
+						transform: tranlateY(-20px);
+						transition: all 450ms;
+						transition-delay: 1.2s;
+						font: {
+							size: 24px;
+							weight: 300;
+						}
+					}
+					.view-project {
+						position: absolute;
+						right: 10px;
+						bottom: 6px;
+						height: 26px;
+						color: $color3;
+						transform: tranlateY(20px);
+						transition: all 450ms;
+						transition-delay: 1.2s;
+						p, span {
+							height: 26px;
+							line-height: 26px;
+							font-size: 14px;
+							float: left;
+							text-transform: uppercase;
+							margin: 0 0 0 10px;
+						}
+					}
+				}
+				a:hover {
+					.project-content {
+						opacity: 1;
+						h4, .view-project {
+							transform: translateY(0);
+						}
+					}
+				}
+			}
+			.normal {
+				@include grid(4,4,4,12);
+				a {
+					@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+						height: 138px;
+					}
+					@media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {
+						height: 180px;
+					}
+					@media (min-width: $screen-lg-min) {
+						height: 220px;
+					}
+				}
+			}
+			.feature {
+				@include grid(8,8,8,12);
+				a {
+					@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+						height: 286px;
+					}
+					@media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {
+						height: 370px;
+					}
+					@media (min-width: $screen-lg-min) {
+						height: 450px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.warning {
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 15px 0;
+	p {
+		margin: 0;
+		display: inline-block;
+		font: {
+			size: 10px;
+			weight: 300;
+		}
+	}
+}
+
+.post-copyrights {
+	margin-bottom: 30px;
+	@media (max-width: $screen-sm-min) { margin-bottom: 15px; }
+	&, ul {
+		width: 100%;
+		float: left;
+	}
+	ul {
+		height: 80px;
+		display: table;
+	}
+	li {
+		padding: 0 30px;
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+		position: relative;
+		a {
+			display: inline-block;
+			font: {
+				size: 28px;
+				weight: 300;
+			}
+			@media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {
+				font-size: 24px;
+			}
+			@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+				font-size: 20px;
+			}
+			@media (max-width: $screen-sm-min) {
+				font-size: 16px;
+			}
+		}
+		&.ag {
+			text-align: right;
+			&:after {
+				content: "";
+				width: 4px;
+				position: absolute;
+				right: -2px;
+				top: 10%;
+				height: 80%;
+				border-radius: 5px;
+				@extend %raank-gradient-top;
+			}
+		}
+	}
+}

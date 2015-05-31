@@ -1,0 +1,36 @@
+---
+layout: default
+permalink: /blog/
+title: Blog
+page: blog
+polygon: false
+fluid: false
+---
+
+	<div class="main-site">
+		<div class="section-page-top">
+			<div class="full-img full-img-primary" data-img="https://unsplash.it/g/1920/300/?random&gravity=center"></div>
+			<div class="middle">
+				<div class="centered">
+					<div class="full-img full-img-secondary"></div>
+					<h1>blog</h1>
+					<p>porque conhecimento deve<br> ser compartilhado.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<section class="section-page section-blog">
+					<div class="col-posts col-md-8 col-md-offset-2">
+						{% for post in site.posts %}
+						{% assign loopindex = forloop.index | modulo: 2 %}
+						<article class="post-item {% if loopindex == 1 %}feature{% else %}normal{% endif %}">
+							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+							<span>{{ post.date | date_to_string }}</span>
+						</article>
+						{% endfor %}
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>

@@ -5,3 +5,5 @@ config:
 	css:		'build/css'
 	js:			'build/js'
 	imgs:		'build/images'
+	jekyll_css:	'_site/build/css'
+	jekyll_js:	'_site/build/js'

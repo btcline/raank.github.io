@@ -1,5 +1,21 @@
+/*
+ * extends classes, objects and components
+ * @since 1.0.0
+ */
 
 %fluid {
 	width: 100%;
 	float: left;
+}
+
+%raank-gradient {
+	background: -webkit-linear-gradient(left, $color1 10%, $color2 90%);
+	background: -o-linear-gradient(left, $color1 10%, $color2 90%);
+	background: linear-gradient(to right, $color1 10%, $color2 90%);
+}
+
+%raank-gradient-top {
+	background: -webkit-linear-gradient(bottom, $color1 10%, $color2 90%);
+	background: -o-linear-gradient(bottom, $color1 10%, $color2 90%);
+	background: linear-gradient(to bottom, $color1 10%, $color2 90%);
 }

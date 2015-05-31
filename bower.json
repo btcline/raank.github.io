@@ -1,9 +1,10 @@
 {
-  "name": "raank.github.io",
+  "name": "raank-redesign",
   "version": "1.0.0",
   "authors": [
     "rank <raank@outlook.com>"
   ],
+  "main": "assets/js/main.js",
   "license": "MIT",
   "homepage": "http://raank.github.io/",
   "private": true,
@@ -11,15 +12,13 @@
     "**/.*",
     "node_modules",
     "_bower",
-    "bower_components"
     "test",
     "tests"
   ],
   "dependencies": {
-    "jquery": "~1.11.1",
+    "jquery": "~1.9.0",
     "modernizr": "~2.8.3",
     "fontawesome": "~4.3.0",
-    "jquery": "~1.9.0",
     "jquery-validation": "~1.13.1",
     "bootstrap-sass-official": "~3.3.3",
     "fluidvids": "~2.4.1",

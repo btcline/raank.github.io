@@ -1,0 +1,161 @@
+.main-site {
+	width: 100%;
+	float: left;
+	height: auto;
+	@include transition-standard;
+	.page-fluid & {
+		padding: 32px;
+		@media (min-width: $screen-lg-min) {
+			padding: 32px;
+		}
+		@media (max-width: $screen-md-min) {
+			padding: 20px;
+		}
+		@media (max-width: $screen-sm-min) {
+			padding: 0;
+		}
+	}
+	.container-fluid, .container {
+		max-width: 1280px;
+	}
+}
+
+.section-page {
+	width: 100%;
+	float: left;
+	position: relative;
+	float: left;
+	background-color: transparent;
+	background: #fff;
+	border: 10px solid #fff;
+	opacity: 0;
+	@include transition-standard;
+	.loaded & {
+		opacity: 1;
+	}
+}
+
+.polygon {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	.ms-left, .ms-right {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+	}
+	&-full {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}
+}
+
+.section-page-top {
+	width: 100%;
+	height: 300px;
+	background: {
+		position: center center;
+		repeat: no-repeat;
+	}
+	display: table;
+	text-align: center;
+	opacity: 0;
+	@include transition-standard;
+	position: relative;
+	.full-img {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.loaded & {
+		opacity: 1;
+	}
+	h1, p {
+		text-align: center;
+		margin: 5px 0;
+		z-index: 2;
+		position: relative;
+	}
+	h1 {
+		line-height: 36px;
+		color: $color3;
+		font: {
+			size: 36px;
+			weight: 300;
+		}
+	}
+	p {
+		line-height: 20px;
+		color: $color3;
+		font: {
+			size: 16px;
+			weight: 300;
+		}
+	}
+	.middle {
+		display: table-cell;
+		vertical-align: middle;
+		@media (max-width: 430px) {
+			padding: 0 15px;
+		}
+	}
+	.centered {
+		background: {
+			// color: rgba(255,255,255,0.3);
+		}
+		margin: auto;
+		width: 400px;
+		padding: 30px;
+		position: relative;
+		overflow: hidden;
+		@media (min-width: $screen-lg-min) {
+			min-width: 400px;
+			max-width: 800px;
+		}
+		@media (max-width: $screen-lg-min) {
+			min-width: 400px;
+			max-width: 700px;
+		}
+		@media (max-width: $screen-md-min) {
+			min-width: 400px;
+			max-width: 700px;
+		}
+		@media (max-width: 430px) {
+			width: 100%;
+			min-width: 0;
+			max-width: 100%;
+		}
+		.full-img-secondary {
+			background: {
+				position: center center;
+				repeat: no-repeat;
+			}
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			filter: blur(5px);
+		}
+		&:after {
+			@extend %raank-gradient;
+			content: "";
+			position: absolute;
+			left: -20%;
+			top: -20%;
+			width: 140%;
+			height: 140%;
+			z-index: 1;
+			opacity: 0.6;
+		}
+	}
+}

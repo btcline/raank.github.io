@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=2.0, user-scalable=yes"/>
+	<title>Contato - Portfólio - Felipe Rank</title>
+	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="description" content="Contato - Portfólio - Felipe Rank" />
+	<meta name="keywords" content="Felipe Rank, Desenvolvimento, Criação de Sites em Jaraguá do Sul, desenvolvimento de sites" />
+	<meta property="og:description" content="Contato - Portfólio - Felipe Rank" />
+	<meta property="og:title" content="Contato - Portfólio - Felipe Rank" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://127.0.0.1:4000/" />
+	<meta property="og:image" content="/images/share/share.jpg" />
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/build/css/style.min.css">
+	<script src="/build/js/vendor/modernizr.min.js"></script>
+</head>
+<body class="page-contact loading">
+
+	
+	<header class="main-header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="site-name col-md-1 col-sm-1 col-xs-4">
+					<a href="/" title="Felipe Rank">Felipe Rank - Front-end Developer</a>
+				</div>
+				<div class="site-menu col-md-11 col-sm-11 col-xs-12">
+					<ul>
+						<!-- <li class="item item-1"><a href="/">Home</a></li> -->
+						<li class="item item-2"><a href="/sobre/">Sobre</a></li>
+						<li class="item item-3"><a href="/projetos/">Projetos</a></li>
+						<li class="item item-4"><a href="/blog/">Blog</a></li>
+						<li class="item item-5 active"><a href="/contato/">Contato</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="toggle-menu visible-xs">
+		<button>
+			<span class="fa fa-navicon"></span>
+			<span class="fa fa-close"></span>
+		</button>
+	</div>
+
+
+	<div class="main-site">
+		<div class="section-page-top">
+			<div class="full-img full-img-primary" data-img="https://unsplash.it/g/1920/300/?random&gravity=center"></div>
+			<div class="middle">
+				<div class="centered">
+					<div class="full-img full-img-secondary"></div>
+					<h1>contato</h1>
+					<p>entre em contato, faça um orçamento<br> ou até mesmo só para trocar ideias.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<section class="section-page section-contact">
+					<div class="message-contact col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" style="display: none;">
+						<div class="alert alert-success">
+							<p><span class="fa fa-check-circle"></span> Recebi seu contato, obrigado! Em breve vou entrar em contato com você.</p>
+						</div>
+					</div>
+					<div class="col-form col-md-3 col-sm-4 col-md-offset-3 col-sm-offset-2 col-xs-12">
+						<form id="contactform" method="POST">
+							<input type="text" name="_gotcha" style="display:none" />
+							<input type="hidden" name="_next" style="display:none" value="http://127.0.0.1:4000/contato/#sucesso" />
+							<span class="input-text">
+								<input type="text" name="name" placeholder="Seu nome">
+							</span>
+							<span class="input-text">
+								<input type="email" name="_replyto" placeholder="Seu email">
+							</span>
+							<span class="input-text">
+								<input type="text" name="_subject" placeholder="Assunto" />
+							</span>
+							<span class="input-text">
+								<textarea name="message" rows="5" placeholder="Me envie uma mensagem :)"></textarea>
+							</span>
+							<div class="input-submit">
+								<input type="submit" value="Enviar">
+							</div>
+						</form>
+						<script>
+							var contactform =  document.getElementById('contactform');
+							contactform.setAttribute('action', '//formspree.io/' + 'raank92' + '@' + 'gmail' + '.' + 'com');
+						</script>
+					</div>
+					<div class="col-infos col-md-3 col-sm-4 col-xs-12">
+						<h2>Informações</h2>
+						<ul>
+							<li class="item item-1"><span class="fa fa-phone"></span> (47) 9917-1875 <small>TIM</small></li>
+							<li class="item item-2"><span class="fa fa-envelope"></span> raank92@gmail.com</li>
+							<li class="item item-3"><span class="fa fa-facebook"></span> <a href="http://goo.gl/umWfeX">Facebook</a></li>
+							<li class="item item-4"><span class="fa fa-twitter"></span>	<a href="http://goo.gl/I6sd9O">Twitter</a></li>
+							<li class="item item-5"><span class="fa fa-linkedin"></span> <a href="http://goo.gl/5V2l5R">Linkedin</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="copyrights col-md-5 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-12">
+						<p>2015 @ Felipe Rank - Todos os direitos reservados.</p>
+					</div>
+					<div class="socials col-md-3 col-sm-4 col-xs-12">
+						<ul>
+							<li class="item item-1"><a href="mailto:raank92@gmail.com?subject=Contato%20pelo%3A%20site%20raank.github.io"><span class="fa fa-envelope"></span></a></li>
+							<li class="item item-2"><a href="http://goo.gl/umWfeX"><span class="fa fa-facebook"></span></a></li>
+							<li class="item item-3"><a href="http://goo.gl/I6sd9O"><span class="fa fa-twitter"></span></a></li>
+							<li class="item item-4"><a href="http://goo.gl/5V2l5R"><span class="fa fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/build/js/main.min.js"></script>
+	<script defer>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=0;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-54717879-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
+</body>
+</var>

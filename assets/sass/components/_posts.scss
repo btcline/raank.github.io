@@ -1,0 +1,74 @@
+.post-single {
+	.post-image,
+	.post-about {
+		width: 100%;
+		float: left;
+		
+	}
+	.post-image {
+		text-align: center;
+		margin-bottom: 30px;
+		@media (max-width: $screen-sm-min) { margin-bottom: 15px; }
+		img {
+			max-width: 100%;
+			display: inline-block;
+		}
+	}
+	.post-text, .post-comments {
+		width: 60%;
+		margin: 0 20%;
+		p {
+			text-align: center;
+			font: {
+				size: 22px;
+				weight: 300;
+			}
+		}
+		@media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {
+			width: 70%;
+			margin: 0 15%;
+			p {
+				font-size: 22px;
+			}
+		}
+		@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+			width: 70%;
+			margin: 0 15%;
+			p {
+				font-size: 20px;
+			}
+		}
+		@media (max-width: $screen-sm-min) {
+			width: 100%;
+			margin: 0 0;
+			padding: 0 15px;
+			p {
+				font-size: 18px;
+			}
+		}
+		blockquote {
+			// width: 100%;
+			// float: left;
+			margin: 15px 0;
+			background: #f0f0f0;
+			padding: 30px;
+		}
+	}
+	.post-comments {
+		padding: 30px;
+	}
+	.post-socials {
+		width: 100%;
+		float: left;
+		text-align: center;
+		padding: 15px 0;
+		.item {
+			padding: 0 5px;
+			display: inline-block;
+			height: 20px;
+			iframe {
+				vertical-align: bottom;
+			}
+		}
+	}
+}

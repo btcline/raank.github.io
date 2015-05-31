@@ -1,0 +1,245 @@
+$header-height: 100px;
+$header-item-height: 64px;
+
+.main-header {
+	width: 100%;
+	height: $header-height;
+	z-index: 100;
+	background-color: #fff;
+	font-size: 14px;
+	opacity: 0;
+	z-index: 100;
+	position: relative;
+	@include transition-standard;
+	.page-home & {
+		transform: translateY(-#{$header-height});
+		position: fixed;
+		left: 0;
+		top: 0;
+		@media (max-width: $screen-sm-min) {
+			height: auto;
+			transform: translateY(-100%);
+		}
+	}
+	&.active {
+		transform: translateY(0);
+	}
+	.loaded & {
+		opacity: 1;
+	}
+	@media (max-width: $screen-sm-min) {
+		height: auto;
+		transform: translateY(-100%);
+		position: fixed;
+		left: 0;
+		top: 0;
+	}
+}
+
+.site-name {
+	height: $header-item-height;
+	margin-top: (($header-height - $header-item-height) /2);
+	opacity: 0;
+	transform: translateY(-10px);
+	@include transition-standard;
+	.loaded & {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	a {
+		width: 100%;
+		float: left;
+		position: relative;
+		z-index: 200;
+		height: $header-item-height;
+		text-indent: -9999px;
+		background: {
+			image: url('../images/felipe-rank-logo@2x.png');
+			position: center center;
+			repeat: no-repeat;
+			size: auto 100%;
+		}
+	}
+	@media (max-width: $screen-md-min) {
+		a {
+			display: inline-block;
+			width: 100%;
+			height: $header-item-height;
+			float: left;
+			line-height: $header-item-height;
+			svg {
+				display: inline-block;
+			}
+		}
+	}
+	@media (max-width: $screen-sm-min) {
+		margin:{
+			top: 15px;
+			left: 33.33333%;
+		}
+		a {
+			display: inline-block;
+			width: 100%;
+			height: $header-item-height;
+			float: left;
+			line-height: $header-item-height;
+			svg {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.site-menu {
+	ul {
+		width: auto;
+		float: left;
+		height: $header-item-height;
+		@media (max-width: $screen-sm-min) {
+			margin: 15px 0;
+			width: 100%;
+			text-align: center;
+			height: auto;
+		}
+		li {
+			float: left;
+			margin-right: 30px;
+			opacity: 0;
+			transform: translateY(-10px);
+			transition: all 450ms;
+			position: relative;
+			height: $header-height;
+			a {
+				@include transition-standard;
+				height: $header-height;
+				line-height: $header-height;
+				float: left;
+				font: {
+					size: 2em;
+					weight: 300;
+				}
+			}
+			@media (max-width: $screen-lg-min) {
+				margin-right: 15px;
+				a {
+					font-size: 1.6em;
+				}
+			}
+			@media (max-width: $screen-sm-min) {
+				width: 100%;
+				text-align: center;
+				margin: 0;
+				height: $header-item-height;
+				a {
+					font-size: 1.5em;
+					width: 100%;
+					float: left;
+					height: 100%;
+				}
+			}
+			@for $i from 1 through 5 {
+				&.item-#{$i} {
+					@if $i == 5 {
+						transition-delay: 1s;
+					} @else {
+						transition-delay: #{"0."+ ($i + 5) +"s"};
+					}
+				}
+			}
+			.loaded & {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			.transition-fast & {
+				transition-delay: 0.5s;
+			}
+			&:after {
+				height: 4px;
+				float: left;
+				content: "";
+				border-radius: 5px;
+				position: absolute;
+				left: -5%;
+				bottom: -2px;
+				transition: all 450ms;
+				width: 0;
+				opacity: 0;
+				@extend %raank-gradient;
+				@include transition-standard;
+			}
+			&.active, &:hover {
+				&:after {
+					width: 110%;
+					opacity: 1;
+				}
+			}
+			@media (max-width: $screen-sm-min) {
+				&:after {
+					display: none !important;
+				}
+			}
+		}
+	}
+}
+
+.toggle-menu {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	background: $color3;
+	z-index: 1000;
+	width: 64px;
+	height: 64px;
+	font-size: 32px;
+	color: $color1;
+	opacity: 0;
+	@include transition-standard;
+	&.active {
+		color: $color1;
+	}
+	.loaded & {
+		opacity: 1;
+	}
+	button {
+		width: 100%;
+		float: left;
+		height: 100%;
+		position: relative;
+	}
+	span {
+		width: 100%;
+		height: 100%;
+		float: left;
+		position: absolute;
+		left: 0;
+		top: 0;
+		line-height: 64px;
+	}
+	.fa {
+		transition: all 450ms;
+	}
+	.fa- {
+		&close {
+			transform: scale(0);
+		}
+		&navicon {
+			transform: scale(1);
+		}
+	}
+	&.active {
+		.fa-close {
+			transform: scale(1);
+		}
+		.fa-navicon {
+			transform: scale(0);
+		}
+	}
+	@media (max-width: $screen-sm-min) {
+		width: 40px;
+		height: 40px;
+		font-size: 28px;
+		span {
+			line-height: 40px;
+		}
+	}
+}

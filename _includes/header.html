@@ -1,0 +1,26 @@
+	
+	<header class="main-header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="site-name col-md-1 col-sm-1 col-xs-4">
+					<a href="{{ site.baseurl }}" title="Felipe Rank">{{ site.title }}</a>
+				</div>
+				<div class="site-menu col-md-11 col-sm-11 col-xs-12">
+					<ul>
+						<!-- <li class="item item-1{% if page.title == 'Home Page' %} active{% endif %}"><a href="{{ site.baseurl }}">Home</a></li> -->
+						<li class="item item-2{% if page.title == 'Sobre Mim' %} active{% endif %}"><a href="{{ site.baseurl }}sobre/">Sobre</a></li>
+						<li class="item item-3{% if page.title == 'Projetos' %} active{% endif %}"><a href="{{ site.baseurl }}projetos/">Projetos</a></li>
+						<li class="item item-4{% if page.title == 'Blog' %} active{% endif %}"><a href="{{ site.baseurl }}blog/">Blog</a></li>
+						<li class="item item-5{% if page.title == 'Contato' %} active{% endif %}"><a href="{{ site.baseurl }}contato/">Contato</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="toggle-menu visible-xs">
+		<button>
+			<span class="fa fa-navicon"></span>
+			<span class="fa fa-close"></span>
+		</button>
+	</div>

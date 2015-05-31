@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=2.0, user-scalable=yes"/>
+	<title>{{ page.title }} - {{ site.metatag.description }}</title>
+	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="description" content="{{ page.title }} - {{ site.metatag.description }}" />
+	<meta name="keywords" content="{{ site.metatag.tags }}" />
+	<meta property="og:description" content="{{ page.title }} - {{ site.metatag.description }}" />
+	<meta property="og:title" content="{{ page.title }} - {{ site.metatag.description }}" />
+	<meta property="og:type" content="{{ site.metatag.type }}" />
+	<meta property="og:url" content="{{ site.url }}" />
+	<meta property="og:image" content="{{ site.baseurl }}images/share/share.jpg" />
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ "build/css/style.min.css" | prepend: site.baseurl }}">
+	<script src="{{ "build/js/vendor/modernizr.min.js" | prepend: site.baseurl }}"></script>
+</head>
+<body class="page-{{ page.page }} loading{% if page.fluid == true %} page-fluid{% endif %}">

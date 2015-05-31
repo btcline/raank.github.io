@@ -1,0 +1,119 @@
+
+.section-about {
+	.centered-page {
+		width: 100%;
+		float: left;
+		position: relative;
+		padding: 30px 0 60px;
+		margin: 0 0 50px;
+		&:after {
+			content: "";
+			position: absolute;
+			left: 20%;
+			bottom: 0;
+			width: 60%;
+			height: 4px;
+			border-radius: 4px;
+			@extend %raank-gradient;
+		}
+	}
+
+	.about-image, .about-text {
+		height: 256px;
+		@media 	(max-width: $screen-sm-min) {
+			height: auto;
+		}
+	}
+	.about-image {
+		text-align: right;
+		img {
+			border-radius: 50%;
+		}
+		@media 	(max-width: $screen-sm-min) {
+			text-align: center;
+			padding-bottom: 30px;
+			img {
+				max-width: 50%;
+				height: auto;
+			}
+		}
+	}
+
+	.about-text {
+		display: table;
+		h1 {
+			margin: 0 0 15px;
+			line-height: 36px;
+			font: {
+				size: 36px;
+				weight: 300;
+			}
+			@media (max-width: $screen-sm-min) {
+				font-size: 26px;
+				line-height: 26px;
+			}
+		}
+		.page-text {
+			display: table-cell;
+			vertical-align: middle;
+			p {
+				width: 256px;
+				float: left;
+				margin: 0;
+				line-height: 18px;
+				font: {
+					size: 16px;
+					weight: 300;
+				}
+			}
+		}
+		@media 	(max-width: $screen-sm-min) {
+			.section-title, .page-text {
+				text-align: center;
+				p {
+					max-width: 100%;
+					width: auto;
+				}
+			}
+		}
+	}
+
+	.col-skills {
+		h3 {
+			width: 100%;
+			float: left;
+			text-align: center;
+			margin: 0;
+			line-height: 36px;
+			font: {
+				size: 36px;
+				weight: 300;
+			}
+			@media (max-width: $screen-sm-min) {
+				font-size: 26px;
+				line-height: 26px;
+			}
+		}
+		.page-text {
+			text-align: center;
+		}
+	}
+
+	.skills {
+		width: 100%;
+		float: left;
+		text-align: center;
+		li {
+			@include grid(2,2,4,6);
+			position: relative;
+			border: 5px solid #fff;
+			background: #f0f0f0;
+			display: inline-block;
+			img {
+				width: 100%;
+				float: left;
+				height: auto;
+			}
+		}
+	}
+}

@@ -1,58 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js">
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="UTF-8">
-	<title>Felipe Rank - Front-end Developer</title>
-	<meta name="viewport" content="initial-scale=1, maximum-scale=2, user-scalable=yes, width=device-width">
-	
-	<meta name="description" content="My name is Felipe rank and I'm front-end developer" />
-	<meta name="keywords" content="front-end, developer, jaraguá do sul, desenvolvimento de sites, criação de sites, sites, criar sites, wordpress" />
-	<meta property="og:description" content="My name is Felipe rank and I'm front-end developer" />
-	<meta property="og:title" content="Felipe Rank - Front-end Developer" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=2.0, user-scalable=yes"/>
+	<title>Home Page - Portfólio - Felipe Rank</title>
+	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="description" content="Home Page - Portfólio - Felipe Rank" />
+	<meta name="keywords" content="Felipe Rank, Desenvolvimento, Criação de Sites em Jaraguá do Sul, desenvolvimento de sites" />
+	<meta property="og:description" content="Home Page - Portfólio - Felipe Rank" />
+	<meta property="og:title" content="Home Page - Portfólio - Felipe Rank" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://raank.github.io/" />
-	<meta property="og:image" content="http://raank.github.io/build/images/1.jpg" />
+	<meta property="og:url" content="http://127.0.0.1:4000/" />
+	<meta property="og:image" content="/images/share/share.jpg" />
 
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<style type="text/css">.image-full,.about-image,.about-content h1,.about-content nav,.about-content ul,.about-content .email{width:100%;float:left}*{box-sizing:border-box}html{height:100%;margin:0;padding:0;width:100%;overflow:hidden}body{min-width:992px;color:#ecf0f1;font-size:14px;font-family:"Ubuntu Mono";speak:none;-webkit-font-smoothing:antialiased;-webkit-osx-font-smoothing:grayscale;-webkit-overflow-scrolling:touch}img{border:none;outline:none}a,a:hover,a:focus,a:visited,a:active{outline:0;text-decoration:none}ul,ol{padding:0;margin:0;display:inline-block}ul li,ol li{display:inline-block;list-style:none}object{display:none}.image-full{height:100%;position:absolute;left:0;top:0;overflow:hidden;z-index:-1;background-position:0 top;background-repeat:no-repeat}@media (max-width: 480px){.image-full{background-position:center center}}#svg-filter{display:none}.about-me{width:300px;padding:70px 20px;position:absolute;left:100px;top:85px;height:auto;overflow:hidden;border-top:1px solid rgba(255,255,255,0.1)}.about-me:after,.about-me:before{content:"";width:110%;height:110%;position:absolute;left:0;top:0;z-index:-1;margin:-5% -5% 0;-webkit-filter:blur(3px);filter:blur(3px)}.about-me:before{background-image:url("http://raank.github.io/build/images/1.jpg");background-position:-100px -75px;background-repeat:no-repeat}.about-me:after{background-color:rgba(0,0,0,0.4)}@media (max-width: 480px){.about-me{left:0;right:0;top:0;bottom:0;margin:auto;max-height:315px}.about-me:before{background-position:center center}}.about-image{height:100px;text-align:center;z-index:4}.about-image img{width:100px;height:100px;border:5px solid rgba(255,255,255,0.1);border-left-color:rgba(255,255,255,0.3);border-right-color:rgba(255,255,255,0.3);border-radius:50%;display:inline-block}.about-content h1{color:#ecf0f1;margin:10px 0;text-align:center;text-transform:uppercase;font-size:12px;font-weight:400}.about-content nav,.about-content ul{text-align:center}.about-content li{display:inline-block}.about-content li a{color:#27ae60;text-transform:uppercase;font-size:12px;font-weight:400}@media (max-width: 480px){.about-content li a{font-size:14px}}.about-content li a:hover,.about-content li a:focus{color:#2ecc71}.about-content .email{text-align:center;color:#ecf0f1;margin:10px 0 0}.rights-img{position:absolute;bottom:0;right:0;padding:15px;font-size:10px}.rights-img a{color:#27ae60;font-size:12px;font-weight:400}.rights-img a:hover,.rights-img a:focus{color:#2ecc71}@media (max-width: 480px){.rights-img{width:100%;float:left;text-align:center}}</style>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/build/css/style.min.css">
+	<script src="/build/js/vendor/modernizr.min.js"></script>
 </head>
-<body>
+<body class="page-home loading">
 
-	<div class="image-full" style="background-image: url(build/images/1.jpg);"></div>
+	
+	<header class="main-header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="site-name col-md-1 col-sm-1 col-xs-4">
+					<a href="/" title="Felipe Rank">Felipe Rank - Front-end Developer</a>
+				</div>
+				<div class="site-menu col-md-11 col-sm-11 col-xs-12">
+					<ul>
+						<!-- <li class="item item-1 active"><a href="/">Home</a></li> -->
+						<li class="item item-2"><a href="/sobre/">Sobre</a></li>
+						<li class="item item-3"><a href="/projetos/">Projetos</a></li>
+						<li class="item item-4"><a href="/blog/">Blog</a></li>
+						<li class="item item-5"><a href="/contato/">Contato</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
 
-	<div class="about-me">
-		<div class="about-image">
-			<img src="build/images/profile.jpg" alt="Felipe Rank Profile Image">
-		</div>
-		<div class="about-content">
-			<h1 class="about-title">Felipe Rank - Front-end Developer</h1>
-			<nav class="navbar navbar-default">
-				<ul>
-					<li class="item item-1"><a href="http://goo.gl/umWfeX" target="_blank" title="contact us at facebook">Facebook</a></li>
-					<li class="item item-2"><a href="http://goo.gl/I6sd9O" target="_blank" title="contact us at twitter">Twitter</a></li>
-					<li class="item item-3"><a href="http://goo.gl/5V2l5R" target="_blank" title="check out my resume">Linkedin</a></li>
-					<li class="item item-4"><a href="http://goo.gl/rKAXVt" target="_blank" title="check my posts">Medium</a></li>
-				</ul>
-			</nav>
-			<p class="email">raank92@gmail.com - contact-me ;)</p>
-		</div>
+	<div class="toggle-menu visible-xs">
+		<button>
+			<span class="fa fa-navicon"></span>
+			<span class="fa fa-close"></span>
+		</button>
 	</div>
 
-	<span class="rights-img">Image of Jaraguá do Sul - SC - Brazil by <a href="http://goo.gl/SDZMEp" target="_blank">WeArt</a></span>
 
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-54717879-1', 'auto');
-ga('send', 'pageview');
-</script>
+	<div id="polygon" class="polygon lazyload" data-expand="-40"><div class="ms-left"><div class="ms-section" id="left1"><div class="section-inner polygon-full"><div class="polygon-section polygon-full"><div id="shader" class="polygon-full"><div id="output" class="polygon-full"></div></div></div></div></div></div><div class="ms-right"><div class="ms-section polygon-full" id="right1"></div></div></div>
+	
+
+	<div class="content-center">
+		<svg version="1.1" id="FelipeRankLogo" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="256px" height="256px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve"><g><path fill="#fff" d="M41.403,78.537c3.936-0.986,7.547,2.303,7.547,6.576c0,7.23-8.858,7.886-13.451,7.886c-18.368,0-33.786-14.789-33.786-32.209c0-22.348,21.324-39.11,50.844-39.11c22.634,0,39.69,6.903,54.784,14.462c12.133-8.545,27.551-14.462,49.529-14.462c23.618,0,37.067,13.147,37.067,26.293c0,14.46-12.139,24.32-29.852,24.32c-20.664,0-34.442-7.888-55.435-19.06c-9.186,9.2-14.107,23.004-14.107,38.123c0,6.902,1.315,12.816,2.625,20.047c7.873-2.627,16.073-4.273,24.604-4.273c30.506,0,42.642,15.448,42.642,20.707c0,4.272-3.281,7.232-7.217,7.232c-2.297,0-4.591-0.985-5.905-2.96c-4.919-6.901-15.415-11.174-29.52-11.174c-7.875,0-14.762,1.643-21.326,3.943c1.642,8.874,2.952,18.734,2.952,30.566c0,69.676-26.894,78.876-41.657,78.876c-16.729,0-29.194-10.515-29.194-34.508c0-27.934,19.354-65.074,51.17-82.493c-1.966-8.544-3.606-16.761-3.606-25.964c0-15.774,5.249-32.208,16.073-45.354c-12.137-5.588-26.242-10.846-43.627-10.846c-20.336,0-36.083,10.846-36.083,25.634c0,10.846,9.842,18.734,20.336,18.078L41.403,78.537z M86.671,131.123c-24.601,15.776-39.364,46.998-39.364,68.689c0,17.417,7.545,21.035,14.434,21.035c21.976,0,27.225-38.127,27.225-65.403C88.966,146.57,87.656,138.024,86.671,131.123z M120.458,43.7c14.106,7.559,27.883,15.119,43.626,15.119c8.53,0,15.09-3.943,15.09-10.517c0-5.587-7.214-12.819-22.635-12.819C142.765,35.482,128.33,39.099,120.458,43.7z"/><path fill="#fff" d="M197.21,226.104c-0.655,3.943-3.605,6.247-7.215,6.247c-3.938,0-6.564-3.289-6.564-7.231c0-2.301,9.188-56.202,9.188-67.047c0-14.461-2.953-20.049-7.217-24.321c-1.639-1.313-1.971-3.284-1.971-5.258c0-3.943,3.283-7.231,6.893-7.231c6.231,0,15.415,11.176,14.757,27.606c7.219-21.688,24.934-31.55,41.333-31.55c4.267,0,7.874,2.959,7.874,7.231c0,3.943-2.951,6.242-6.891,6.572c-34.111,1.973-40.675,42.069-48.216,84.137L197.21,226.104z"/></g></svg>
+		<svg version="1.1" id="FelipeRankLogoShadow" class="logo-shadow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="256px" height="256px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve"><g><path d="M41.403,78.537c3.936-0.986,7.547,2.303,7.547,6.576c0,7.23-8.858,7.886-13.451,7.886c-18.368,0-33.786-14.789-33.786-32.209c0-22.348,21.324-39.11,50.844-39.11c22.634,0,39.69,6.903,54.784,14.462c12.133-8.545,27.551-14.462,49.529-14.462c23.618,0,37.067,13.147,37.067,26.293c0,14.46-12.139,24.32-29.852,24.32c-20.664,0-34.442-7.888-55.435-19.06c-9.186,9.2-14.107,23.004-14.107,38.123c0,6.902,1.315,12.816,2.625,20.047c7.873-2.627,16.073-4.273,24.604-4.273c30.506,0,42.642,15.448,42.642,20.707c0,4.272-3.281,7.232-7.217,7.232c-2.297,0-4.591-0.985-5.905-2.96c-4.919-6.901-15.415-11.174-29.52-11.174c-7.875,0-14.762,1.643-21.326,3.943c1.642,8.874,2.952,18.734,2.952,30.566c0,69.676-26.894,78.876-41.657,78.876c-16.729,0-29.194-10.515-29.194-34.508c0-27.934,19.354-65.074,51.17-82.493c-1.966-8.544-3.606-16.761-3.606-25.964c0-15.774,5.249-32.208,16.073-45.354c-12.137-5.588-26.242-10.846-43.627-10.846c-20.336,0-36.083,10.846-36.083,25.634c0,10.846,9.842,18.734,20.336,18.078L41.403,78.537z M86.671,131.123c-24.601,15.776-39.364,46.998-39.364,68.689c0,17.417,7.545,21.035,14.434,21.035c21.976,0,27.225-38.127,27.225-65.403C88.966,146.57,87.656,138.024,86.671,131.123z M120.458,43.7c14.106,7.559,27.883,15.119,43.626,15.119c8.53,0,15.09-3.943,15.09-10.517c0-5.587-7.214-12.819-22.635-12.819C142.765,35.482,128.33,39.099,120.458,43.7z"/><path d="M197.21,226.104c-0.655,3.943-3.605,6.247-7.215,6.247c-3.938,0-6.564-3.289-6.564-7.231c0-2.301,9.188-56.202,9.188-67.047c0-14.461-2.953-20.049-7.217-24.321c-1.639-1.313-1.971-3.284-1.971-5.258c0-3.943,3.283-7.231,6.893-7.231c6.231,0,15.415,11.176,14.757,27.606c7.219-21.688,24.934-31.55,41.333-31.55c4.267,0,7.874,2.959,7.874,7.231c0,3.943-2.951,6.242-6.891,6.572c-34.111,1.973-40.675,42.069-48.216,84.137L197.21,226.104z"/></g></svg>
+	</div>
 
 
+
+	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/build/js/main.min.js"></script>
+	<script defer>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=0;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-54717879-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
 </body>
-</html>
-<!--
-	no jquery, the single also has its charm
--->
+</var>

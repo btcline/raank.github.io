@@ -1,0 +1,27 @@
+
+.section-blog {
+	padding: 30px 0;
+	.post-item {
+		width: 100%;
+		float: left;
+		h2 {
+			font: {
+				size: 24px;
+				weight: 300;
+			}
+			margin: 0;
+			a {
+				color: $color4;
+				&:hover {
+					color: $color1;
+				}
+			}
+		}
+		span {
+			color: $color5;
+			font: {
+				size: 11px;
+			}
+		}
+	}
+}

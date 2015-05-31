@@ -1,10 +1,21 @@
 # Site wide configuration
 
 title: Felipe Rank - Front-end Developer
-description: My name is Felipe rank and I'm front-end developer
-url: http://raank.github.io/
-background: build/images/1.jpg
+description: I'm front-end developer
 analytics: UA-54717879-1
+url: http://127.0.0.1:4000/
+baseurl: /
+source:      .
+destination: ./_site
+includes:     ./_includes
+layouts:     ./_layouts
+data_source: ./_data
+share: http://i.imgur.com/CiZK46f.jpg
+collections:
+  projects:
+    output: true
+    permalink: /projetos/:title.html
+    layout: project.html
 
 gems:
   - jekyll-sitemap
@@ -16,7 +27,11 @@ owner:
   twitter: http://goo.gl/I6sd9O
   facebook: http://goo.gl/umWfeX
   linkedin: http://goo.gl/5V2l5R
-  medium: http://goo.gl/rKAXVt
-  avatar: build/images/profile.jpg
 
-exclude: ["lib", "app", "assets", "bower.json", "gulpfile.js","config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
+metatag:
+  description: Portfólio - Felipe Rank
+  tags: Felipe Rank, Desenvolvimento, Criação de Sites em Jaraguá do Sul, desenvolvimento de sites
+  type: website
+
+
+exclude: ["lib", "app", "assets", "csscomb.json", "bower.json", "gulpfile.js","config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
