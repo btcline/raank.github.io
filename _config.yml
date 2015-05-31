@@ -3,7 +3,7 @@
 title: Felipe Rank - Front-end Developer
 description: I'm front-end developer
 analytics: UA-54717879-1
-url: http://127.0.0.1:4000/
+url: http://raank.github.io/
 baseurl: /
 source:      .
 destination: ./_site
