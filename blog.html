@@ -27,6 +27,7 @@ fluid: false
 						<article class="post-item {% if loopindex == 1 %}feature{% else %}normal{% endif %}">
 							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 							<span>{{ post.date | date_to_string }}</span>
+							<p>{{ post.excerpt | strip_html }}</p>
 						</article>
 						{% endfor %}
 					</div>

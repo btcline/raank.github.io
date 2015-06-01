@@ -108,4 +108,16 @@
 			}
 		}
 	}
+	.excerpt {
+		display: none;
+	}
+	.image-centered {
+		width: 100%;
+		float: left;
+		text-align: center;
+		img {
+			display: inline-block;
+		}
+	}
 }
+

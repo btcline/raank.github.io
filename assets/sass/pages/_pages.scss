@@ -70,6 +70,9 @@
 	opacity: 0;
 	@include transition-standard;
 	position: relative;
+	.page-post & {
+		text-align: left;
+	}
 	.full-img {
 		position: absolute;
 		left: 0;
@@ -83,6 +86,9 @@
 		margin: 5px 0;
 		z-index: 2;
 		position: relative;
+		.page-post & {
+			text-align: left;
+		}
 	}
 	h1 {
 		line-height: 36px;

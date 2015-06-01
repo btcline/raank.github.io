@@ -3,7 +3,13 @@ layout: post
 title: Formulário de contato para sites estáticos.
 date:   2015-05-31
 categories: jekyll, contato
+excerpt_separator: <!--more-->
 ---
+
+{: .excerpt}
+Uma solução simples para quem tem um site estático e precisa de um formulário de contato.
+
+<!--more-->
 
 E aí galera, tudo tranquilo!? <br>Hoje vou compartilhar uma informação útil que eu encontrei para o 'temor' de alguns developers, que é o contato.
 

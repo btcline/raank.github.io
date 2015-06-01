@@ -1,6 +1,8 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="{{ "build/js/main.min.js" | prepend: site.baseurl }}"></script>
+	{% if page.page == 'contact' %}<script src="{{ "build/js/contato.min.js" | prepend: site.baseurl }}"></script>{% endif %}
+	
 	<script defer>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -9,6 +11,7 @@
 		ga('create', '{{ site.analytics }}', 'auto');
 		ga('send', 'pageview');
 	</script>
+	
 	{% if page.layout == 'post' %}
 	<script defer>
 		var disqus_shortname = 'raank';

@@ -5,10 +5,15 @@
 		width: 100%;
 		float: left;
 		margin: 15px 0;
+		opacity: 0;
+		@include transition-standard;
+		.loaded & {
+			opacity: 1;
+		}
 		h2 {
 			font: {
-				size: 24px;
-				weight: 300;
+				size: 28px;
+				weight: 700;
 			}
 			margin: 0;
 			a {
@@ -22,6 +27,15 @@
 			color: $color5;
 			font: {
 				size: 11px;
+				weight: 700;
+			}
+		}
+		p {
+			margin: 0;
+			color: $color5;
+			font: {
+				size: 16px;
+				weight: 300;
 			}
 		}
 	}

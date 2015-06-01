@@ -41,6 +41,17 @@
 				}
 			}
 		}
+		span.error {
+			width: 100%;
+			color: $color3;
+			text-align: right;
+			float: left;
+			padding: 3px 0 0;
+			line-height: 14px;
+			font: {
+				size: 11px;
+			}
+		}
 	}
 }
 
