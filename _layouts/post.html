@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=2.0, user-scalable=yes"/>
-	<title>{{ page.title }} - {{ site.title }}</title>
+	<title>{{ page.title | remove: '.' }} - {{ site.title }}</title>
 
 	<meta name="description" content="{{ page.description }}" />
 	<meta name="keywords" content="{{ page.tags }}" />
 	<meta property="og:description" content="{{ page.description }}" />
-	<meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
+	<meta property="og:title" content="{{ page.title | remove: '.' }} - {{ site.title }}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ page.url }}" />
 	<meta property="og:image" content="{{ site.share }}" />
@@ -31,15 +31,19 @@
 	<div class="main-site">
 		<div class="section-page-top">
 			<div class="full-img full-img-primary" data-img="https://unsplash.it/g/1920/300/?random&gravity=center"></div>
-			<div class="middle">
-				<div class="centered">
-					<div class="full-img full-img-secondary"></div>
-					<h1>{{ page.title }}</h1>
-					<p>{{ page.date | date: "%d/%m/%Y" }}</p>
+			<div class="content-absolute bottom">
+				<div class="container">
+					<div class="row">
+						<div class="centered">
+							<div class="full-img-secondary"></div>
+							<h1>{{ page.title }}</h1>
+							<p>{{ page.date | date: "%d/%m/%Y" }}</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="section-page post-single">
 					<div class="post-socials">
@@ -50,10 +54,10 @@
 							<a href="https://twitter.com/share" class="twitter-share-button" data-via="raank92">Tweet</a>
 						</span>
 					</div>
-					<div class="post-text">
+					<div class="post-text col-md-8 col-sm-12 col-md-offset-2">
 						{{ content }}
 					</div>
-					<div class="post-comments">
+					<div class="post-comments col-md-8 col-sm-12 col-md-offset-2">
 						<div id="disqus_thread"></div>
 						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 					</div>
