@@ -8,14 +8,21 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 	width: 110%;
 	float: left;
 	margin: 10px -5%;
+	.hljs {
+		font: {
+			size: 12px;
+			family: 'Ubuntu Mono', serif,
+		}
+	}
 }
 
 .hljs {
 	display: block;
-	padding: 1em;
+	padding: 30px;
 	color: #333;
 	background: #f8f8f8;
 	overflow-x: auto;
+	border-radius: 4px;
 	-webkit-text-size-adjust: none;
 }
 

@@ -75,14 +75,16 @@
 		h4 { font-size: 24px; }
 	}
 	.code-paragraph {
-		background: #f0f0f0;
+		background: #f8f8f8;
 		display: inline-table;
 		vertical-align: middle;
 		line-height: 31px;
 		padding: 0 10px;
+		border-radius: 4px;
 		font: {
 			size: 12px;
 			weight: 300;
+			family: 'Ubuntu Mono', serif;
 		}
 	}
 	.post-comments {

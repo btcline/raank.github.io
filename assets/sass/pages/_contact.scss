@@ -12,18 +12,19 @@
 			margin: 5px 0;
 			@extend %raank-gradient;
 			input, textarea {
+				border: 1px solid transparent;
 				&, &:focus {
-					border: none;
+					outline: none;
 				}
 				&:focus {
-					outline: 1px solid rgba(0,0,0,0.3);
+					border: 1px solid rgba(0,0,0,0.3);
 				}
 			}
 			input {
-				padding: 5px 10px;
+				padding: 10px;
 			}
 			textarea {
-				padding: 5px 2px 2px 10px;
+				padding: 10px 2px 2px 10px;
 			}
 		}
 		.input-submit {
@@ -31,13 +32,13 @@
 			float: left;
 			input {
 				padding: 5px 10px;
-				background: $color1;
+				background: $color2;
 				color: $color3;
 				float: right;
 				&:hover, &:focus {
 					border: none;
 					outline: none;
-					background: $color2;
+					background: $color1;
 				}
 			}
 		}

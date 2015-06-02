@@ -15,6 +15,7 @@ share: /images/share/share.jpg
 markdown: kramdown
 redcarpet:
   extensions: ["tables", "fenced_code_blocks"]
+highlighter: rouge
 
 # Outputting
 permalink:     /blog/:year/:month/:title.html
