@@ -115,4 +115,4 @@ Espero ter ajudado, até mais pessoas.
 <img class="lazyload" data-src="http://i.imgur.com/FzhaHex.gif">
 
 ### Contribuitions
-- [@brulima](https://github.com/brulima)
+[@brulima](https://github.com/brulima)
