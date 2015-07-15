@@ -11,6 +11,8 @@ Uma solução simples para quem tem um site estático e precisa de um formulári
 
 <!--more-->
 
+<span class="alert alert-warning">UPDATE on 15.07.2015</span>
+
 E aí galera, tudo tranquilo!? <br>Hoje vou compartilhar uma informação útil que eu encontrei para o 'temor' de alguns developers, que é o contato.
 
 Primeiramente eu achei essa ferramenta muito útil, pois não precisa de php e também não precisa saber muito para inseri-lo em páginas estáticas, vou fazer um passo-a-passo bem simples, vocês iram ver que é bem fácil.
@@ -19,7 +21,7 @@ Iremos usar a ferramenta **Formspree**, o envio é apenas via **javascript**.<br
 
 ~~~html
 <form id="formulario" method="POST">
-    <input type="text" placeholder="Seu nome">
+    <input type="text" placeholder="Seu nome" name="name" />
     <input type="email" placeholder="Seu email">
     <textarea placeholder="Sua Mensagem"></textarea>
     <input type="submit" value="Enviar">
@@ -30,8 +32,8 @@ Veja que adicionamos o formulário, mas para ele enviar os dados para a variáve
 
 ~~~html
 <form id="formulario" action="//formspree.io/seu-email@email.com" method="POST">
-    <input type="text" placeholder="Seu nome">
-    <input type="email" placeholder="Seu email">
+    <input type="text" placeholder="Seu nome" name="name" />
+    <input type="email" placeholder="Seu email" name="_replyto" />
     <textarea placeholder="Sua Mensagem"></textarea>
     <input type="submit" value="Enviar">
 </form>
@@ -76,8 +78,8 @@ Nosso formulário ficará assim:
 
 ~~~html
 <form id="formulario" method="POST">
-	<input type="text" placeholder="Seu nome">
-	<input type="email" placeholder="Seu email">
+	<input type="text" placeholder="Seu nome" name="name" />
+	<input type="email" placeholder="Seu email" name="_replyto" />
 	<input type="hidden" name="_subject" value="Assunto" />
 	<textarea placeholder="Sua Mensagem"></textarea>
 	<input type="text" name="_gotcha" style="display:none" /> <!-- Campo anti-spam -->
@@ -111,3 +113,6 @@ Espero ter ajudado, até mais pessoas.
 
 
 <img class="lazyload" data-src="http://i.imgur.com/FzhaHex.gif">
+
+### Contribuitions
+    - [@brulima](https://github.com/brulima)
