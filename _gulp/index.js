@@ -44,12 +44,6 @@ module.exports = function(gulp, plugins, argv, dirname) {
 		.pipe( gulp.dest('build/images') )
 	});
 
-	gulp.task('clean:front', function(cb) {
-		return gulp.src(['build/css/*', '_site/build/css/*', 'build/js/*', '_site/build/css/*'], { ready: true })
-		.pipe( plugins.clean({ force: true }) )
-		.pipe( plugins.if(argv.n || argv.notify, plugins.notify('Arquivos removidos com sucesso!')) );
-	});
-
 	gulp.task('watch:front', function() {
 		gulp.watch(['assets/sass/**/*.scss'], ['styles:front']);
 		gulp.watch(['assets/js/**/*.js'], ['scripts:front']);

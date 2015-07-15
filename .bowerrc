@@ -1,3 +1,4 @@
 {
-	"directory": "_bower"
+	"directory": "_bower",
+	"strict-ssl": false
 }

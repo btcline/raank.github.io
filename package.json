@@ -7,8 +7,6 @@
     "connect": "",
     "gulp": "",
     "gulp-autoprefixer": "",
-    "gulp-clean": "",
-    "gulp-csscomb": "",
     "gulp-dynamic": "",
     "gulp-flatten": "0.0.4",
     "gulp-gm": "",
