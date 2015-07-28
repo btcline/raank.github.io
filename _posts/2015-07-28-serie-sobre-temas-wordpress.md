@@ -4,6 +4,7 @@ title: Série sobre temas Wordpress
 date:   2015-07-28
 categories: jekyll, contato
 excerpt_separator: <!--more-->
+description: Do básico ao avançado, como começar a desenvolver seu próprio tema.
 ---
 
 {: .excerpt}

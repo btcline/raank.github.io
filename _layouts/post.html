@@ -8,21 +8,22 @@
 
 	<meta name="description" content="{{ page.description }}" />
 	<meta name="keywords" content="{{ page.tags }}" />
-	<meta property="og:description" content="{{ page.description }}" />
+	<meta name="author" content="{{ site.title }}" />
+	<meta property="og:description" content="{{ page.description | strip_html }}" />
 	<meta property="og:title" content="{{ page.title | remove: '.' }} - {{ site.title }}" />
 	<meta property="og:type" content="article" />
-	<meta property="og:url" content="{{ page.url }}" />
-	<meta property="og:image" content="{{ site.share }}" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:image" content="{{ site.url }}/{{ site.share }}" />
 
+	<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic|Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ "build/css/style.min.css" | prepend: site.baseurl }}">
+	<script src="{{ "build/js/vendor/modernizr.min.js" | prepend: site.baseurl }}"></script>
 	<script>
 		var host = 'raank.github.io';
 		if (window.location.host == host && window.location.protocol != 'https:') { 
 			window.location.protocol = 'https:';
 		}
 	</script>
-	<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic|Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="{{ "build/css/style.min.css" | prepend: site.baseurl }}">
-	<script src="{{ "build/js/vendor/modernizr.min.js" | prepend: site.baseurl }}"></script>
 </head>
 <body class="page-post loading">
 
