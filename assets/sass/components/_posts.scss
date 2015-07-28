@@ -123,5 +123,23 @@
 		float: left;
 		padding: 10px;
 	}
+	.list-components {
+		padding: 15px;
+		background: #f0f0f0;
+		font: {
+			family: "Ubuntu Mono", serif;
+			size: 12px;
+		}
+		&, li {
+			width: 100%;
+			float: left;
+		}
+		li {
+			padding: 2px 0;
+			&:before {
+				content: "- ";
+			}
+		}
+	}
 }
 
