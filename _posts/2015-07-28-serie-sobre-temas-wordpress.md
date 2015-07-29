@@ -31,8 +31,10 @@ Caso queiram algum item, comentem aí embaixo que eu incluo no processo.
 
 Valeu!
 
+<img class="lazyload" data-src="http://i.imgur.com/d6z7vfv.gif" alt="Até mais!">
+
+
 ### Passos:
+
 {: .list-components}
  - [Parte 1](https://raank.github.io/blog/2015/07/criando-temas-wp-parte-1.html)
-
-<img class="lazyload" data-src="http://i.imgur.com/d6z7vfv.gif" alt="Até mais!">
