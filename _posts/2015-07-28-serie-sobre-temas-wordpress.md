@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Série sobre temas Wordpress
-date:   2015-07-28 21:00:00 -03:00
+date:   2015-07-28 21:00:00 -00:00
 categories: wordpress, temas
 excerpt_separator: <!--more-->
 description: Do básico ao avançado, como começar a desenvolver seu próprio tema.

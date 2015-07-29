@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Aee! A novidade é o newsletter
-date:   2015-07-29 01:16:00 -03:00
+date:   2015-07-29 01:16:00 -00:00
 categories: newsletter, novidade
 excerpt_separator: <!--more-->
 description: Agora você pode acompanhar os posts aqui do meu blog

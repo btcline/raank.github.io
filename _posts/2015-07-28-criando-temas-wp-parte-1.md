@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Criando temas wp - parte 1
-date:   2015-07-28 22:00:00 -03:00
+date:   2015-07-28 22:00:00 -00:00
 categories: wordpress, temas
 excerpt_separator: <!--more-->
 description: Criação de temas wordpress parte 1.
