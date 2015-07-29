@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Série sobre temas Wordpress
-date:   2015-07-28
-categories: jekyll, contato
+date:   2015-07-28 21:00:00 -03:00
+categories: wordpress, temas
 excerpt_separator: <!--more-->
 description: Do básico ao avançado, como começar a desenvolver seu próprio tema.
 ---
@@ -31,5 +31,8 @@ Caso queiram algum item, comentem aí embaixo que eu incluo no processo.
 
 Valeu!
 
+### Passos:
+{: .list-components}
+ - [Parte 1](https://raank.github.io/blog/2015/07/criando-temas-wp-parte-1.html)
 
 <img class="lazyload" data-src="http://i.imgur.com/d6z7vfv.gif" alt="Até mais!">
