@@ -152,3 +152,67 @@
 		}
 	}
 }
+
+.section-newsletter {
+	padding: 15px;
+	label {
+		display: none;
+	}
+
+	h2,
+	.mc-field-group,
+	.form-submit {
+		padding: 0 5px;
+		@media (max-width: $screen-xs-min) {
+			padding: 5px;
+		}
+	}
+
+	h2 {
+		margin: 0;
+		line-height: 40px;
+		font: {
+			size: 16px;
+		}
+	}
+	.mc-field-group {
+		&, input {
+			height: 40px;
+			float: left;
+		}
+		input {
+			padding: 0 15px;
+			width: 100%;
+			border: 1px solid #d0d0d0;
+		}
+	}
+	.form-submit {
+		input {
+			width: 100%;
+			float: left;
+			line-height: 40px;
+			height: 40px;
+			text-align: center;
+			background: $color2;
+			color: #fff;
+			&:hover {
+				background: $color1;
+			}
+		}
+	}
+	div.mce_inline_error {
+		position: absolute;
+		top: -28px;
+	}
+	input.mce_inline_error {
+		border: 1px solid #6B0505;
+	}
+
+	.mce-responses {
+		.response {
+			width: 100%;
+			float: left;
+			margin: 10px 0;
+		}
+	}
+}
