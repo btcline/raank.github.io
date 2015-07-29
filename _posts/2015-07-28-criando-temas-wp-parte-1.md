@@ -12,7 +12,7 @@ Criação de temas wordpress parte 1.
 
 <!--more-->
 
-Fala galera, primeiramente vamos definir a estrutura de um tema, isso vareia de acordo com o que precisamos, vamos criar algo básico.
+Fala galera, primeiramente vamos definir a estrutura de um tema, isso varia de acordo com o que precisamos, vamos criar algo básico.
 
 ### Passo 1:
 Criando arquivos
