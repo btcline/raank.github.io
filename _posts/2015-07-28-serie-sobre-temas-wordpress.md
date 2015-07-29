@@ -14,7 +14,7 @@ Do básico ao avançado, como começar a desenvolver seu próprio tema.
 
 Fala galera, vou começar a série sobre desenvolvimento de tema Wordpress, do básico ao avançado.
 
-Nessa série vou mostrar como eu desenvolvo, vou criar um repositório no repositório [wp-theme](https://github.com/raank/wp-theme){:target="_blank"}, podendo assim demorar de um post para o outro, pois quero deixar bem explicado, commit por commit.
+Nessa série vou mostrar como eu desenvolvo, vou criar um repositório no github([wp-theme](https://github.com/raank/wp-theme){:target="_blank"}), podendo assim demorar de um post para o outro, pois quero deixar bem explicado, commit por commit.
 
 {: #requisitos-minimos}
 #### Requisitos mínimos
