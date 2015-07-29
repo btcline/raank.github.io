@@ -1,0 +1,64 @@
+---
+layout: default
+title: Blog
+page: blog
+polygon: false
+fluid: false
+---
+
+	<div class="main-site">
+		<div class="section-page-top">
+			<div class="full-img full-img-primary" data-img="https://unsplash.it/g/1920/300/?random&gravity=center"></div>
+			<div class="content-absolute bottom">
+				<div class="container">
+					<div class="row">
+						<div class="centered">
+							<div class="full-img full-img-secondary"></div>
+							<h1>blog</h1>
+							<p>porque conhecimento deve<br> ser compartilhado.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<section class="section-page section-blog">
+					<div class="col-posts col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+						{% for post in paginator.posts %}
+						{% assign loopindex = forloop.index | modulo: 2 %}
+						<article class="post-item {% if loopindex == 1 %}feature{% else %}normal{% endif %}">
+							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+							<span>{{ post.date | date_to_string }}</span>
+							<p>{{ post.excerpt | strip_html }}</p>
+						</article>
+						{% endfor %}
+					</div>
+
+					<div class="paginator col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+						{% if paginator.total_pages > 1 %}
+						{% if paginator.previous_page %}
+						<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}"><<</a>
+						{% endif %}
+
+						{% for page in (1..paginator.total_pages) %}
+						{% if page == paginator.page %}
+						<span class="active">{{ page }}</span>
+						{% elsif page == 1 %}
+						<a href="{{ '/blog/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+						{% else %}
+						<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+						{% endif %}
+						{% endfor %}
+
+						{% if paginator.next_page %}
+						<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">>></a>
+						{% endif %}
+						{% endif %}
+					</div>
+
+
+				</section>
+			</div>
+		</div>
+	</div>

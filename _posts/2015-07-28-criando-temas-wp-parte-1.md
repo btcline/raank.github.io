@@ -85,3 +85,9 @@ Até a próxima marujos.
 
 
 <img class="lazyload" data-src="http://i.imgur.com/jOCaybJ.gif" alt="vlw flw">
+
+### Passos:
+
+{: .list-components}
+ - [Parte 1](https://raank.github.io/blog/2015/07/criando-temas-wp-parte-1.html)
+ - [Parte 2](https://raank.github.io/blog/2015/07/criando-temas-wp-parte-2.html)

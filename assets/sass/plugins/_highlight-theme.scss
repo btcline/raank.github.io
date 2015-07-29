@@ -5,22 +5,25 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 */
 
 .full-code {
-	width: 110%;
+	width: 100%;
 	float: left;
-	margin: 10px -5%;
-	.hljs {
+	margin: 10px 0;
+	background: #f0f0f0;
+	.hljs, .language-sass {
 		font: {
 			size: 12px;
 			family: 'Ubuntu Mono', serif,
 		}
 	}
+
 }
 
+.language-sass,
 .hljs {
 	display: block;
-	padding: 30px;
+	padding: 15px;
 	color: #333;
-	background: #f8f8f8;
+	background: #eee;
 	overflow-x: auto;
 	border-radius: 4px;
 	-webkit-text-size-adjust: none;
