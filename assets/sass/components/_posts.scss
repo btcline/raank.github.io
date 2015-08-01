@@ -141,6 +141,22 @@
 			}
 		}
 	}
+	.gist {
+		width: 100%;
+		float: left;
+	}
+	.endpost {
+		margin-top: 0;
+		padding-top: 30px;
+		border-top: 2px solid $color2;
+		font-size: 12px !important;
+	}
+
+	.byebye {
+		font: {
+			size: 14px !important;
+		}
+	}
 }
 
 .paginator {

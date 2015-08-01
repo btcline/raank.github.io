@@ -1,35 +1,37 @@
 ---
 layout: post
-title: Série sobre temas Wordpress
+title: Série sobre temas WordPress
 date:   2015-07-28 21:00:00 -00:00
 categories: wordpress, temas
 excerpt_separator: <!--more-->
-description: Do básico ao avançado, como começar a desenvolver seu próprio tema.
+description: Tema básico para WordPress, como começar a desenvolver seu próprio tema.
 ---
 
 {: .excerpt}
-Do básico ao avançado, como começar a desenvolver seu próprio tema.
+Tema básico para WordPress, como começar a desenvolver seu próprio tema.
 
 <!--more-->
 
-Fala galera, vou começar a série sobre desenvolvimento de tema Wordpress, do básico ao avançado.
+Fala galera, vou começar uma pequena série sobre desenvolvimento de tema WordPress, o tema será básico.<br>Será criado apenas os arquivos e vamos inserir os códigos nele, para entender o que é cada função nativa do WordPress eu recomendo ler o [Codex do WordPress](http://codex.wordpress.org){:target="_blank"}.
 
-Nessa série vou mostrar como eu desenvolvo, vou criar um repositório no github([wp-theme](https://github.com/raank/wp-theme){:target="_blank"}), podendo assim demorar de um post para o outro, pois quero deixar bem explicado, commit por commit.
+Nessa série vou mostrar como *eu desenvolvo*, foi criado um repositório no github([wp-theme](https://github.com/raank/wp-theme){:target="_blank"}), para vocês poderem acompanhar a série.
 
 {: #requisitos-minimos}
 #### Requisitos mínimos
 
+O que deve saber para desenvolver um tema
+
 {: .list-components}
  - PHP (básico)
  - HTML (básico)
- - SASS (básico)
+ - SASS/CSS (básico)
  - Javascript (básico)
 
-Sobre o sass, eu irei explicar passo a passo como instalar o sass, nodejs, compass, gulp e bower.
+{:.endpost}
+Dúvidas!? Mande email via [contato](https://raank.github.io/contato){:target="_blank"}
 
-Caso queiram algum item, comentem aí embaixo que eu incluo no processo.
-
-Valeu!
+{:.byebye}
+Valeu e até a próxima!
 
 <img class="lazyload" data-src="http://i.imgur.com/d6z7vfv.gif" alt="Até mais!">
 
@@ -39,3 +41,4 @@ Valeu!
 {: .list-components}
  - [Parte 1](https://raank.github.io/blog/2015/07/criando-temas-wp-parte-1.html)
  - [Parte 2](https://raank.github.io/blog/2015/07/criando-temas-wp-parte-2.html)
+ - [Parte 3](https://raank.github.io/blog/2015/08/criando-temas-wp-parte-3.html)
