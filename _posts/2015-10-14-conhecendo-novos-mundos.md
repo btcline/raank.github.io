@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conhecendo novos mundos, saindo do Wordpress
-date: 2015-10-14 18:00:00 -00:00
+date: 2015-10-14 09:30:00 -00:00
 categories: posts, php, wp
 excerpt_separator: <!--more-->
 description: Conhecendo novos mundos, saindo da rotina
